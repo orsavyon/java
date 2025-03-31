@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="GameController"
+      spacing="20" alignment="CENTER"
+      prefWidth="500" prefHeight="300">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <HBox spacing="100" alignment="CENTER">
+        <VBox spacing="10" alignment="CENTER">
+            <Label text="Player 1" />
+            <Label fx:id="player1CardLabel" text="Card 1" />
+        </VBox>
+
+        <VBox spacing="10" alignment="CENTER">
+            <Label text="Player 2" />
+            <Label fx:id="player2CardLabel" text="Card 2" />
+        </VBox>
+    </HBox>
+
+    <Button fx:id="playTurnButton" text="Play Turn" onAction="#playTurn" />
+
+</VBox>
