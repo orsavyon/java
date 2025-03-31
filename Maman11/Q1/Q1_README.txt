@@ -1,0 +1,27 @@
+README - War Card Game (Q1)
+---------------------------
+
+Description:
+This is a Java implementation of the classic "War" card game, built with JavaFX for graphical interaction.
+Two players compete by flipping the top card of their decks; the higher card wins the round.
+In the event of a tie, a "war" occurs: each player adds 3 face-down cards and 1 face-up card to decide the winner.
+
+Instructions to Run:
+1. Ensure you are using Java 8.
+2. Compile all .java files inside the Q1 folder.
+3. Open and run the Main.java file to start the JavaFX application.
+4. The interface allows turn-by-turn play using the "Play Turn" button.
+5. Game progress and results are shown in dialog boxes.
+
+File Contents:
+- Card.java: Represents a single playing card with face, suit, and numeric value.
+- DeckOfCards.java: Creates and shuffles a standard 52-card deck using ArrayList.
+- Player.java: Represents a player with their hand of cards and related operations.
+- WarGame.java: Console-based version of the game (alternative to GUI).
+- GameController.java: Logic for the GUI version of the game (JavaFX controller).
+- Main.java: Launches the JavaFX interface and initializes the game.
+- game.fxml: JavaFX layout for the game interface.
+
+Notes:
+- No external libraries are used; everything is built with standard Java 8 and JavaFX.
+- Before submission, make sure to remove the 'package' declarations from all Java and FXML files.
